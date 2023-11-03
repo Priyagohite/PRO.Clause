@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio Website...</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="https://kit.fontawesome.com/6dcfc07926.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <!-- <img src="piya1.jpg.jpeg" alt="image" class="image"> -->
+   <div class="container">
+        <nav> 
+            <img src="priya-high-resolution-logo.png" class="logo">
+            <ul id="sidemenu">
+               <li><a href="#header">Home</a></li>
+               <li><a href="#about">About</a></li>
+               <li><a href="#Services">Services</a></li>
+               <li><a href="#portfolio">Portfolio</a></li>
+               <li><a href="#contact">Contact</a></li>
+               <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="wrap">
+            <div class="header-text">
+                  <h1>Hi, I'm Priya<span> Gohite</span></h1>
+                  <p>This is my official portfolio website to showcase my all
+                   works related to Web Development and UI design... 
+                  </p>
+                  <a href="I'm Priya Gohite, IT Student (1).pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="image">
+                <img src="priya.jpg.png" alt="image">
+            </div>
+        </div>
+    </div>
+</div>
+    
+<!-- ----------------about------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="portfolio3.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About <span>me</span></h1>
+                <p>Information Technology Student</br>
+                    <br>
+                   I'm a web Designer with extensive experience consider myself a responsible, and orderly person. Expertise is to create and website design, frontend design, and many more.
+                   Seeking a challenging position in a reputable organization to expand and utilize my learning, skills and knowledge.
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('certificate')">Certificate</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>C/C++</span><br>Application Software Design/Data Structures & Algorithms</br>/Operating Systems</li>
+                        <li><span>Java(Core+Advance)</span><br>Web Applications</li>
+                        <li><span>UI/UX</span><br>Designing Web</li>
+                        <li><span>Web Development</span><br>Website Design with Html/Css/JavaScript</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="certificate">
+                    <ul>
+                        <li><span>Basic Web Development </span><br> JS & React JS Bootcamp</li>
+                        <li><span>Python and Cloud Security</span></br>By ShapeAI</li>
+                        <li><span>Web Development</span></br>At TechnoHacks EduTech</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023-2025</span><br>Currently pursuing M.Tech From International Institute Of Professional Studies</li>
+                        <li><span>2021-2023</span><br>B.Tech From International Institute Of Professional Studies</li>
+                        <li><span>2019-2020</span><br>Higher SEcondary School from Achivers's Academy H.S School</li>
+                        <li><span>2017-2018</span><br>High School from Pithampur Public H.S School</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!---------------services---------------->
+<div id="Services">
+    <div class="container">
+        <h1 class="sub-title">My <span>Services</span></h1>
+        <div class="services-list">
+            <div>
+               <i class="fa-brands fa-app-store"></i>
+               <h2>C/C++</h2>
+               <p>C and C++ are programming languages used to create software and applications.
+               </p>
+               <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Java(Core+Adv)</h2>
+                    <p>Java is a popular computer programming language from simple phone apps to complex computer programs.
+                        "Core" Java refers to the basics you need to learn to get started, while "Advanced" Java involves more complex topics like web development and databases.</p>
+                        <a href="#">learn more</a>
+            </div>
+           <!-- /* <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>UI/UX</h2>
+                    <p>UI(User Interface) makes a digital product visually appealing and easy to navigate. 
+                    UX (User Experience) ensures users have a positive,efficient, and enjoyable interaction
+                    with the product, focusing on their needs and feedback.</p>
+                        <a href="#">learn more</a>
+            </div>*/ -->
+            <div>
+                <i class="fa-solid fa-blog"></i>
+                <h2>Web Development</h2>
+                    <p>Web development services include
+                       creating,designing, and maintaining
+                       websites and web applications ensuring 
+                       they look good, work well,and provide 
+                       the desired functionality for businesses
+                       and users online.</p>
+                        <a href="#">learn more</a>
+             </div>
+        </div>
+    </div>
+</div>
+<!------------portfolio---------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My <span>work</span></h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="portfolio8.jpg">
+                <div class="layer">
+                    <h3>Calculator Design</h3>
+                    <p>I specialize in designing efficient and user-friendly Calculators.
+                        I create compact calculator with user interface design, creating a tool 
+                        that simplifies everyday calculations with style.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                 <img src="portfolio6.jpg">
+                 <div class="layer">
+                    <h3>Library Management System</h3>
+                    <p>I created a user-friendly software to help libraries efficiently organize their books, 
+                        simplify checkouts, and enhance overall operations.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="portfolio9.jpg">
+                <div class="layer">
+                    <h3>Transport & Passenger Service App</h3>
+                    <p>I designed and developed an easy-to-use app that connects passengers with transportation
+                         services, making commuting convenient and hassle-free. 
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+           </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!-------------contact-------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+          <div class="contact-left">
+             <h1 class="sub-title">Contact <span>Me</span></h1>
+             <p><i class="fa-solid fa-paper-plane"></i>priyagoh7@gmail.com</p>
+             <p><i class="fa-solid fa-square-phone"></i>9575951652</p>
+             <div class="social-icons">
+                <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+             </div>
+             <!-- <a href="I'm Priya Gohite, IT Student (1).pdf" download class="btn btn2">Download CV</a> -->
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @Priya<i class="fa-solid fa-heart"></i></p>
+
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname)
+    {
+        for(tablink of tablinks)
+        {
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents)
+        {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+            
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu()
+    {
+        sidemenu.style.right ="0";
+        
+    }
+    function closemenu()
+    {
+        sidemenu.style.right ="-200px";
+    }
+</script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbz8_x26-SD6cjBPY45ADvrdaut8fhx8coCUNGkg69rw-Svz9v4LwkLHyfjgMk88arg8oA/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+     /* .then(response => console.log('Success!', response))*/
+     .then(response =>
+     {
+         msg.innerHTML="Message sent successfully"
+         setTimeout(function()
+         {
+            msg.innerHTML=""
+         },5000)
+         form.reset()
+     })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
