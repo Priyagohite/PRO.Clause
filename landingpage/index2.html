@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbuks Website Landing Page.....</title>
+    <link rel="stylesheet" href="STYLE3.CSS">
+</head>
+<body>
+      <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="logo.png" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+         </header>
+         <div class="content">
+            <div class="textBox">
+                <h2>It's not just a Coffee<br>It's <span>Starbucks</span></h2>
+                <p>Starbucks is an American company that operates the largest coffeehouse chain and one of the most recognizable brands in the world.
+                There was a time when <b>WALL STREET</b> portrayed STARBUKS as the <b>"THIRD PLACE" after HOME and WORK.</b>
+                </p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="imgBox">
+               <img src="imga1.png" class="Starbucks">
+            </div>
+         </div>
+         <ul class="thumb">
+            <li><img src="thumb1.png" onclick="imgSlider('imga1.png');changeCircleColor('#017143')"></li>
+            <li><img src="thumb2.png" onclick="imgSlider('imga2.png');changeCircleColor('#eb7495')"></li>
+            <li><img src="thumb3.png" onclick="imgSlider('imga3.png');changeCircleColor('#d752b1')"></li>
+         </ul>
+         <ul class="sci">
+            <li><a href="#"><img src="facebook.png"></a></li>
+            <li><a href="#"><img src="twitter.png"></a></li>
+            <li><a href="#"><img src="instagram.png"></a></li>
+         </ul> 
+      </section>
+
+      <!-- <section class="contact" id="contact">
+         <div class="heading">
+            <h3>contact us</h3>
+         </div>
+      
+         <div class="row">
+
+            <div class="image">
+               <img src="coffee.jpg" alt="">
+            </div>
+           <form action="" method="post">
+              <input type="text" name="name" required class="box" maxlength="20" placeholder="enter your name">
+              <input type="number" name="number" required class="box" maxlength="20"
+               placeholder="enter your number" min="0" max="9999999000" onkeypress="if(this.value.
+               length == 10) return false">
+              <input type="number" name="guests" required class="box" maxlength="20"
+              placeholder="how many guests" min="0" max="99" onkeypress="if(this.value.
+              length == 2) return false">
+             <input type="submit" name="send" required class="box" value="send message" class="btn">
+           </form>
+         </div>
+      </section> -->
+      <script type="text/javascript">
+         function imgSlider(anything)
+          {
+            document.querySelector('.Starbucks').src = anything;
+         }
+         function changeCircleColor(color)
+          {
+            const circle =document.querySelector('.circle');
+            circle.style.background = color;
+         }
+      </script>
+    </body>
+</html>
